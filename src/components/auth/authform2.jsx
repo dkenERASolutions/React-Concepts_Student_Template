@@ -15,32 +15,32 @@ import { GlassButton } from "@/components/auth/GlassButton";
 import { GoogleIcon, GitHubIcon } from "@/components/auth/icons";
 
 export function AuthForm({
-    flow,
-    copy,
-    email,
-    setEmail,
-    password,
-    setPassword,
-    confirmPassword,
-    setConfirmPassword,
-    showPassword,
-    setShowPassword,
-    showConfirmPassword,
-    setShowConfirmPassword,
-    isEmailValid,
-    isPasswordValid,
-    isConfirmPasswordValid,
-    passwordInputRef,
-    confirmPasswordInputRef,
-    onAdvance,
-    onSubmit,
-    onKeyDown,
-    onGoBack,
-    onSwitchMode,
-    onSocialLogin,
+  flow,
+  copy,
+  email,
+  setEmail,
+  password,
+  setPassword,
+  confirmPassword,
+  setConfirmPassword,
+  showPassword,
+  setShowPassword,
+  showConfirmPassword,
+  setShowConfirmPassword,
+  isEmailValid,
+  isPasswordValid,
+  isConfirmPasswordValid,
+  passwordInputRef,
+  confirmPasswordInputRef,
+  onAdvance,
+  onSubmit,
+  onKeyDown,
+  onGoBack,
+  onSwitchMode,
+  onSocialLogin,
 }) {
-    return (
-        <fieldset
+  return (
+    <fieldset
       disabled={flow.status !== "idle"}
       className="relative z-10 flex flex-col items-center gap-8 w-[280px] mx-auto p-4"
     >
@@ -373,7 +373,8 @@ export function AuthForm({
         </button>
       </BlurFade>
     </fieldset>
-    );
+  );
 }
 
 export default AuthForm;
+ 
